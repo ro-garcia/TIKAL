@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TIKAL — Ciudad maya entre selva</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="shamoni.css">
+  <link rel="stylesheet" href="jaguar.css">
+  <script defer src="assets/brand.config.js"></script>
+  <script defer src="scroll-timeline.js"></script>
+</head>
+<body>
+  <main class="scroll-root" id="scroll-root" aria-label="Experiencia visual de marca controlada por desplazamiento">
+    <section class="sticky-stage" id="sticky-stage">
+      <div class="video-backdrop" aria-hidden="true">
+        <video id="hero-video" autoplay loop muted playsinline preload="metadata" src="assets/selva.mp4"></video>
+        <img class="poster" src="assets/selva-poster.jpg" alt="">
+        <img class="jaguar" src="assets/jaguar.png" alt="">
+        <img class="foliage" src="assets/follaje.png" alt="">
+        <div class="tint"></div>
+      </div>
+      <svg class="brand-wordmark" viewBox="0 8 360 92" preserveAspectRatio="xMinYMax meet" role="img" aria-label="Tikal">
+        <text x="0" y="78" font-size="90" id="brand-wordmark-text">TIKAL</text>
+      </svg>
+
+      <div class="ellipse-reveal" id="ellipse-reveal">
+        <div class="white-surface"></div>
+        <div class="inner-scene">
+          <picture class="orbit-temple" id="orbit-temple" aria-hidden="true">
+            <source media="(max-width: 768px)" srcset="assets/templo-tikal.png">
+            <img alt="" width="941" height="884">
+          </picture>
+          <img class="wildlife-motion" id="wildlife-motion" alt="" aria-hidden="true" width="444" height="444">
+          <div class="orbit-stage" id="orbit-stage">
+            <div class="orbit-canvas" id="orbit-canvas">
+              <div class="orbit-motion" id="orbit-motion"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-orbit-caption" id="mobile-orbit-caption" hidden>
+        <strong id="mobile-orbit-title"></strong>
+        <span id="mobile-orbit-detail"></span>
+      </div>
+
+      <div class="copy-layer" id="copy-layer">
+        <div class="scene-chrome copy-animated" id="chrome-animated">
+          <span class="small-brand">TIKAL</span>
+          <button class="menu-mark" type="button" disabled aria-label="Menú pendiente"><span></span></button>
+        </div>
+        <h1 class="center-copy">
+          <span class="copy-animated" id="center-animated">
+            <span class="headline" id="headline"><em>T</em>ikal, ciudad maya entre selva</span>
+            <span class="subheadline" id="subheadline">Patrimonio cultural y natural</span>
+          </span>
+        </h1>
+        <div class="corner-top-right copy-animated" id="top-animated">
+          <div class="corner-label" id="top-label">PETÉN · GUATEMALA</div>
+        </div>
+        <div class="corner-bottom-left copy-animated" id="bottom-left-animated">
+          <div class="corner-label" id="bottom-label">PARQUE NACIONAL TIKAL</div>
+        </div>
+        <div class="corner-bottom-right copy-animated" id="bottom-right-animated">
+          <p class="corner-description" id="description">Descubre la Gran Plaza, los templos mayas y el bosque tropical que rodea esta antigua ciudad de Petén.</p>
+          <div class="cta-row">
+            <a class="cta-pill" id="cta-pill" aria-disabled="true">DESCUBRE TIKAL</a>
+            <a class="cta-arrow" id="cta-arrow" aria-disabled="true" aria-label="Descubre Tikal">↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
