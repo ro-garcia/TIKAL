@@ -4,6 +4,8 @@ Abre `index.html` en Chrome o Edge y desplázate. Si descargaste el ZIP, extráe
 
 ## Integración
 
+El MP3 aportado se incluye en `assets/ambiente-selva.mp3`. El ambiente sonoro se reproduce en bucle y la página no muestra controles. Si el navegador bloquea el inicio automático, el sonido se activa tras la primera interacción admitida.
+
 | Archivo | Componente |
 |---|---|
 | `assets/selva.mp4` | Video de fondo a pantalla completa. 1344 × 768 px, 6,592 s. El movimiento procede de la luz y la atmósfera de la selva. |
